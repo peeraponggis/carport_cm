@@ -1,0 +1,1208 @@
+<title>EV Station เชียงใหม่ 700 ปี</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#0A1018">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EV Station CM">
+<meta name="description" content="สถานีชาร์จรถยนต์ไฟฟ้า DC Fast Charge 240kW ถนนสมโภชเชียงใหม่ 700 ปี · ที่ดิน 5-3-57 ตร.ว. · 12 หัวชาร์จ Phase 1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+
+<style>
+/* ── tokens ── */
+:root {
+  --bg:       #080D14;
+  --bg2:      #0D1520;
+  --card:     #111B28;
+  --card2:    #162134;
+  --border:   rgba(0,205,176,.18);
+  --border2:  rgba(255,255,255,.06);
+  --fg:       #DDE8F2;
+  --fg2:      #7A96B0;
+  --teal:     #00CDB0;
+  --teal2:    #00F5D4;
+  --teal-dim: rgba(0,205,176,.12);
+  --amber:    #F5A623;
+  --amber-dim:rgba(245,166,35,.12);
+  --green:    #22D65A;
+  --red:      #FF5F6D;
+  --font-h:   'Chakra Petch', 'Sarabun', sans-serif;
+  --font-b:   'Sarabun', system-ui, sans-serif;
+  --r:        14px;
+  --r2:       24px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg:      #EEF3F8;
+    --bg2:     #F8FAFB;
+    --card:    #FFFFFF;
+    --card2:   #F0F5FA;
+    --border:  rgba(0,168,144,.22);
+    --border2: rgba(0,0,0,.07);
+    --fg:      #0C1C2E;
+    --fg2:     #4A6880;
+    --teal:    #00917E;
+    --teal2:   #00B09A;
+    --teal-dim:rgba(0,145,126,.1);
+    --amber:   #D98A0A;
+    --amber-dim:rgba(217,138,10,.1);
+    --green:   #19A849;
+    --red:     #E84343;
+    color-scheme: light;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#080D14;--bg2:#0D1520;--card:#111B28;--card2:#162134;
+  --border:rgba(0,205,176,.18);--border2:rgba(255,255,255,.06);
+  --fg:#DDE8F2;--fg2:#7A96B0;--teal:#00CDB0;--teal2:#00F5D4;
+  --teal-dim:rgba(0,205,176,.12);--amber:#F5A623;--amber-dim:rgba(245,166,35,.12);
+  --green:#22D65A;--red:#FF5F6D;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --bg:#EEF3F8;--bg2:#F8FAFB;--card:#FFFFFF;--card2:#F0F5FA;
+  --border:rgba(0,168,144,.22);--border2:rgba(0,0,0,.07);
+  --fg:#0C1C2E;--fg2:#4A6880;--teal:#00917E;--teal2:#00B09A;
+  --teal-dim:rgba(0,145,126,.1);--amber:#D98A0A;--amber-dim:rgba(217,138,10,.1);
+  --green:#19A849;--red:#E84343;
+  color-scheme: light;
+}
+
+/* ── reset + base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;height:100%}
+body{
+  font-family:var(--font-b);
+  font-size:16px;line-height:1.65;
+  background:var(--bg);color:var(--fg);
+  min-height:100%;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--teal);text-decoration:none}
+h1,h2,h3,h4{font-family:var(--font-h);text-wrap:balance;line-height:1.2}
+.container{max-width:1100px;margin-inline:auto}
+
+/* ── nav ── */
+.nav{
+  position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;
+  z-index:100;
+  background:rgba(8,13,20,.85);
+  backdrop-filter:blur(16px) saturate(160%);
+  -webkit-backdrop-filter:blur(16px) saturate(160%);
+  border-bottom:1px solid var(--border2);
+  padding-block:0;
+}
+.nav-inner{
+  max-width:1100px;margin-inline:auto;
+  display:flex;align-items:center;gap:12px;
+  padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));
+  height:56px;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--font-h);font-weight:700;font-size:15px;
+  color:var(--fg);flex-shrink:0;
+}
+.nav-bolt{
+  width:28px;height:28px;background:var(--teal);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;flex-shrink:0;
+}
+.nav-links{
+  display:flex;gap:2px;list-style:none;flex:1;justify-content:flex-end;
+  overflow-x:auto;scrollbar-width:none;
+}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  color:var(--fg2);font-size:12.5px;font-weight:500;
+  padding:6px 10px;border-radius:8px;white-space:nowrap;
+  transition:color .2s,background .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--teal);background:var(--teal-dim)}
+.theme-btn{
+  margin-left:4px;width:36px;height:36px;border-radius:8px;
+  border:1px solid var(--border2);background:transparent;
+  color:var(--fg2);cursor:pointer;font-size:15px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  transition:background .2s,color .2s;
+}
+.theme-btn:hover{background:var(--card);color:var(--fg)}
+
+/* ── hero ── */
+.hero{
+  position:relative;min-height:100svh;
+  display:flex;align-items:flex-end;
+  overflow:hidden;
+  padding-top:calc(56px + env(safe-area-inset-top,0px));
+}
+.hero-img{
+  position:absolute;inset:0;
+  background:url('layout.jpg') center/cover no-repeat;
+  transform:scale(1.03);
+  animation:heroZoom 18s ease-in-out infinite alternate;
+}
+@keyframes heroZoom{from{transform:scale(1.03)}to{transform:scale(1.07)}}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to top, var(--bg) 0%, rgba(8,13,20,.82) 35%, rgba(8,13,20,.4) 65%, rgba(8,13,20,.2) 100%);
+}
+.hero-content{
+  position:relative;z-index:2;width:100%;
+  padding:48px max(16px,env(safe-area-inset-left,0px)) 64px max(16px,env(safe-area-inset-right,0px));
+  max-width:1100px;margin-inline:auto;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--teal-dim);border:1px solid var(--border);
+  border-radius:100px;padding:5px 14px;
+  font-size:12px;font-weight:600;color:var(--teal);letter-spacing:.5px;
+  margin-bottom:20px;text-transform:uppercase;
+}
+.hero-badge::before{
+  content:'';width:7px;height:7px;border-radius:50%;
+  background:var(--teal);animation:blink 1.6s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:1;box-shadow:0 0 0 0 var(--teal)}
+  50%{opacity:.5;box-shadow:0 0 0 5px rgba(0,205,176,0)}}
+.hero h1{
+  font-size:clamp(32px,6vw,66px);font-weight:700;
+  color:#fff;letter-spacing:-1px;margin-bottom:8px;
+}
+.hero h1 span{color:var(--teal)}
+.hero-sub{
+  font-size:clamp(16px,2.5vw,20px);color:rgba(221,232,242,.75);
+  font-weight:400;margin-bottom:28px;max-width:560px;
+}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{
+  background:rgba(255,255,255,.07);border:1px solid var(--border2);
+  border-radius:100px;padding:5px 14px;
+  font-size:13px;color:var(--fg2);
+}
+.pill strong{color:var(--fg)}
+
+/* ── section ── */
+section{padding-block:80px}
+.section-label{
+  font-family:var(--font-h);font-size:11px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;color:var(--teal);
+  margin-bottom:10px;
+}
+.section-title{font-size:clamp(22px,4vw,36px);font-weight:700;margin-bottom:8px}
+.section-sub{font-size:16px;color:var(--fg2);max-width:600px;line-height:1.6}
+
+/* ── stats ── */
+.stats{
+  background:var(--bg2);border-block:1px solid var(--border2);
+  padding-block:40px;
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:24px;
+}
+.stat-card{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r);padding:22px 20px;
+  text-align:center;
+  transition:border-color .3s,transform .3s;
+}
+.stat-card:hover{border-color:var(--border);transform:translateY(-3px)}
+.stat-icon{font-size:26px;margin-bottom:8px}
+.stat-val{
+  font-family:var(--font-h);font-size:32px;font-weight:700;
+  color:var(--teal);letter-spacing:-1px;
+  font-variant-numeric:tabular-nums;
+}
+.stat-val.amber{color:var(--amber)}
+.stat-val.green{color:var(--green)}
+.stat-unit{font-size:13px;color:var(--fg2);margin-top:2px}
+.stat-label{font-size:14px;font-weight:600;margin-top:6px;color:var(--fg)}
+.stat-th{font-size:13px;color:var(--fg2)}
+
+/* ── location ── */
+.loc-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:20px;margin-top:36px;
+}
+@media(max-width:640px){.loc-grid{grid-template-columns:1fr}}
+.loc-img-wrap{
+  border-radius:var(--r2);overflow:hidden;
+  border:1px solid var(--border2);
+  aspect-ratio:4/3;position:relative;
+}
+.loc-img-wrap img{width:100%;height:100%;object-fit:cover}
+.loc-tag{
+  position:absolute;bottom:12px;left:12px;
+  background:rgba(8,13,20,.82);backdrop-filter:blur(8px);
+  border:1px solid var(--border2);border-radius:8px;
+  padding:6px 12px;font-size:12px;color:var(--fg2);font-weight:500;
+}
+.loc-tag strong{color:var(--teal);display:block;font-size:13px}
+.loc-info{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r2);padding:28px;
+  display:flex;flex-direction:column;gap:16px;
+}
+.loc-row{display:flex;gap:12px;align-items:flex-start}
+.loc-dot{
+  width:32px;height:32px;border-radius:8px;flex-shrink:0;
+  background:var(--teal-dim);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;
+}
+.loc-row-label{font-size:12px;color:var(--fg2);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.loc-row-val{font-size:15px;color:var(--fg);font-weight:500;margin-top:2px}
+.map-link{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--teal);color:#000;font-weight:700;font-size:14px;
+  padding:11px 20px;border-radius:10px;margin-top:4px;
+  transition:opacity .2s;
+}
+.map-link:hover{opacity:.85;color:#000}
+
+/* ── site plan ── */
+.plan-wrap{
+  margin-top:40px;
+  position:relative;
+  border-radius:var(--r2);overflow:hidden;
+  border:1px solid var(--border2);
+  background:var(--card);
+}
+.plan-img{width:100%;display:block;max-height:640px;object-fit:contain;background:#1a2332}
+.plan-zones{
+  position:absolute;inset:0;pointer-events:none;
+}
+/* zone badge overlays - positioned as percentages */
+.zone-badge{
+  position:absolute;pointer-events:auto;
+  background:rgba(8,13,20,.88);backdrop-filter:blur(6px);
+  border:1px solid var(--border);border-radius:8px;
+  padding:5px 10px;font-size:11px;font-weight:700;color:var(--teal);
+  cursor:default;transition:transform .2s;white-space:nowrap;
+  font-family:var(--font-h);letter-spacing:.3px;
+}
+.zone-badge:hover{transform:scale(1.06)}
+.zone-badge.amber{color:var(--amber);border-color:rgba(245,166,35,.3)}
+.zone-badge.green{color:var(--green);border-color:rgba(34,214,90,.25)}
+.zone-badge .zh-title{display:block;font-size:10px;color:var(--fg2);font-weight:400;font-family:var(--font-b)}
+
+/* responsive hide zones on small screens */
+@media(max-width:500px){.plan-zones{display:none}}
+
+.zone-legend{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:10px;margin-top:16px;
+}
+.zone-leg-item{
+  display:flex;align-items:center;gap:10px;
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:10px;padding:10px 14px;
+}
+.zone-leg-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+.zone-leg-dot.teal{background:var(--teal)}
+.zone-leg-dot.amber{background:var(--amber)}
+.zone-leg-dot.green{background:var(--green)}
+.zone-leg-dot.blue{background:#4DA6FF}
+.zone-leg-dot.purple{background:#B67BFF}
+.zone-leg-name{font-size:13px;font-weight:600;color:var(--fg);font-family:var(--font-h)}
+.zone-leg-sub{font-size:12px;color:var(--fg2)}
+
+/* ── EV charging ── */
+.ev-grid{
+  display:grid;grid-template-columns:1fr 1.2fr;
+  gap:28px;margin-top:40px;
+  align-items:start;
+}
+@media(max-width:700px){.ev-grid{grid-template-columns:1fr}}
+
+.charge-viz{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r2);padding:28px;
+  text-align:center;
+}
+.charge-ring{
+  width:180px;height:180px;margin:0 auto 20px;
+  position:relative;display:flex;align-items:center;justify-content:center;
+}
+.charge-ring svg{position:absolute;inset:0;width:100%;height:100%;
+  transform:rotate(-90deg)}
+.charge-ring-track{fill:none;stroke:var(--card2);stroke-width:10}
+.charge-ring-fill{
+  fill:none;stroke:var(--teal);stroke-width:10;stroke-linecap:round;
+  stroke-dasharray:490;stroke-dashoffset:490;
+  animation:ringFill 2.5s ease forwards .4s;
+  filter:drop-shadow(0 0 8px var(--teal));
+}
+@keyframes ringFill{to{stroke-dashoffset:118}}
+.charge-inner{position:relative;z-index:1;text-align:center}
+.charge-kw{
+  font-family:var(--font-h);font-size:42px;font-weight:700;
+  color:var(--teal);letter-spacing:-2px;line-height:1;
+}
+.charge-kw-unit{font-size:16px;color:var(--fg2);font-weight:400;letter-spacing:0}
+.charge-label{font-size:14px;color:var(--fg2);margin-top:4px}
+.charge-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 0;border-bottom:1px solid var(--border2);
+}
+.charge-row:last-child{border-bottom:none}
+.charge-row-k{font-size:13px;color:var(--fg2)}
+.charge-row-v{font-size:14px;font-weight:700;color:var(--fg);font-family:var(--font-h)}
+.charge-row-v.teal{color:var(--teal)}
+.charge-row-v.amber{color:var(--amber)}
+
+.ev-stalls{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ev-stall{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r);padding:16px;
+  transition:border-color .2s,background .2s;
+}
+.ev-stall:hover,.ev-stall.active{
+  border-color:var(--teal);background:var(--teal-dim);
+}
+.stall-num{
+  font-family:var(--font-h);font-size:11px;font-weight:700;
+  color:var(--teal);letter-spacing:1px;margin-bottom:6px;
+}
+.stall-icon{font-size:20px;margin-bottom:4px}
+.stall-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.stall-sub{font-size:12px;color:var(--fg2)}
+.stall-bar{
+  height:4px;background:var(--card2);border-radius:2px;margin-top:8px;
+  overflow:hidden;
+}
+.stall-fill{
+  height:100%;background:var(--teal);border-radius:2px;
+  animation:stFill 2s ease forwards 1s;
+}
+@keyframes stFill{from{width:0}to{width:var(--pct)}}
+
+/* ── facilities ── */
+.fac-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;margin-top:40px;
+}
+.fac-card{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r2);padding:28px 24px;
+  transition:border-color .3s,transform .3s;
+}
+.fac-card:hover{border-color:var(--border);transform:translateY(-4px)}
+.fac-icon{
+  width:52px;height:52px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;margin-bottom:18px;
+}
+.fac-icon.teal{background:var(--teal-dim);border:1px solid var(--border)}
+.fac-icon.amber{background:var(--amber-dim);border:1px solid rgba(245,166,35,.25)}
+.fac-icon.blue{background:rgba(77,166,255,.1);border:1px solid rgba(77,166,255,.22)}
+.fac-name{font-size:18px;font-weight:700;margin-bottom:4px}
+.fac-th{font-size:14px;color:var(--fg2);margin-bottom:14px}
+.fac-spec{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:8px 0;border-bottom:1px solid var(--border2);font-size:13px;
+}
+.fac-spec:last-child{border-bottom:none}
+.fac-spec-k{color:var(--fg2)}
+.fac-spec-v{font-weight:600;color:var(--fg)}
+
+/* ── electrical ── */
+.elec-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:20px;margin-top:40px;
+}
+@media(max-width:640px){.elec-grid{grid-template-columns:1fr}}
+.elec-card{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r2);padding:24px;
+}
+.elec-h{
+  font-family:var(--font-h);font-size:13px;font-weight:700;
+  letter-spacing:.5px;color:var(--teal);margin-bottom:16px;
+  text-transform:uppercase;
+}
+.power-flow{display:flex;flex-direction:column;gap:10px}
+.pf-row{
+  display:flex;align-items:center;gap:10px;
+  background:var(--card2);border-radius:10px;padding:12px 14px;
+}
+.pf-badge{
+  min-width:54px;text-align:center;
+  background:var(--teal-dim);border:1px solid var(--border);
+  border-radius:6px;padding:3px 8px;
+  font-family:var(--font-h);font-size:11px;font-weight:700;color:var(--teal);
+}
+.pf-badge.amber{background:var(--amber-dim);color:var(--amber);border-color:rgba(245,166,35,.25)}
+.pf-arrow{color:var(--fg2);font-size:12px;flex:1;text-align:center}
+.pf-label{font-size:13px;color:var(--fg);font-weight:500}
+.pf-sub{font-size:11px;color:var(--fg2)}
+
+/* ── phase 2 ── */
+.timeline{display:flex;flex-direction:column;gap:0;margin-top:40px}
+.tl-item{display:flex;gap:20px;position:relative}
+.tl-item+.tl-item::before{
+  content:'';position:absolute;left:19px;top:0;width:2px;height:100%;
+  background:var(--border2);z-index:0;
+}
+.tl-dot-wrap{position:relative;z-index:1;flex-shrink:0}
+.tl-dot{
+  width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;font-weight:700;font-family:var(--font-h);
+  margin-bottom:4px;
+}
+.tl-dot.active{background:var(--teal);color:#000;box-shadow:0 0 0 6px var(--teal-dim)}
+.tl-dot.coming{background:var(--card2);border:2px solid var(--border2);color:var(--fg2)}
+.tl-body{background:var(--card);border:1px solid var(--border2);border-radius:var(--r);
+  padding:20px 22px;margin-bottom:20px;flex:1;min-width:0;}
+.tl-phase{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--teal);
+  text-transform:uppercase;margin-bottom:6px;font-family:var(--font-h);}
+.tl-phase.amber{color:var(--amber)}
+.tl-title{font-size:17px;font-weight:700;margin-bottom:6px}
+.tl-list{list-style:none;display:flex;flex-direction:column;gap:5px}
+.tl-list li{font-size:14px;color:var(--fg2);display:flex;gap:8px;align-items:flex-start}
+.tl-list li::before{content:'›';color:var(--teal);flex-shrink:0;margin-top:1px}
+
+/* ── CTA ── */
+.cta{
+  text-align:center;
+  background:linear-gradient(135deg,rgba(0,205,176,.07) 0%,rgba(245,166,35,.05) 100%);
+  border-top:1px solid var(--border2);
+  border-bottom:1px solid var(--border2);
+  padding-block:72px;
+}
+.cta-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--teal-dim);border:1px solid var(--border);
+  border-radius:100px;padding:6px 18px;font-size:13px;font-weight:700;
+  color:var(--teal);letter-spacing:.5px;margin-bottom:24px;font-family:var(--font-h);
+}
+.cta h2{font-size:clamp(26px,5vw,44px);font-weight:700;margin-bottom:12px}
+.cta p{font-size:17px;color:var(--fg2);max-width:520px;margin-inline:auto;margin-bottom:36px}
+.cta-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--teal);color:#000;font-weight:700;font-size:15px;
+  padding:14px 28px;border-radius:12px;font-family:var(--font-h);
+  transition:opacity .2s,transform .2s;
+}
+.btn-primary:hover{opacity:.88;transform:translateY(-2px);color:#000}
+.btn-secondary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--card);border:1px solid var(--border);
+  color:var(--fg);font-weight:600;font-size:15px;
+  padding:14px 28px;border-radius:12px;
+  transition:border-color .2s,background .2s;
+}
+.btn-secondary:hover{border-color:var(--teal);background:var(--teal-dim)}
+.contact-info{
+  display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-top:40px;
+}
+.contact-item{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:12px;padding:16px 20px;text-align:left;min-width:180px;
+}
+.contact-label{font-size:11px;color:var(--fg2);font-weight:600;
+  text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.contact-val{font-size:15px;font-weight:700;color:var(--fg);font-family:var(--font-h)}
+.contact-sub{font-size:12px;color:var(--fg2);margin-top:2px}
+
+/* ── footer ── */
+footer{
+  background:var(--bg2);border-top:1px solid var(--border2);
+  padding-block:32px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  text-align:center;
+}
+.footer-logo{font-family:var(--font-h);font-weight:700;font-size:18px;color:var(--teal);margin-bottom:8px}
+.footer-sub{font-size:13px;color:var(--fg2)}
+.footer-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.footer-tag{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:100px;padding:4px 12px;font-size:12px;color:var(--fg2);
+}
+
+/* ── fade-in on scroll ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .charge-ring-fill{animation:none;stroke-dashoffset:118}
+}
+
+/* ── misc ── */
+.divider{height:1px;background:var(--border2);margin-block:8px}
+.tag{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--card2);border:1px solid var(--border2);
+  border-radius:6px;padding:3px 10px;font-size:12px;color:var(--fg2);font-weight:500;
+}
+.tag.teal{background:var(--teal-dim);color:var(--teal);border-color:var(--border)}
+.tag.amber{background:var(--amber-dim);color:var(--amber);border-color:rgba(245,166,35,.25)}
+</style>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-bolt">⚡</div>
+      <span>EV Station CM</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#location">ทำเลที่ตั้ง</a></li>
+      <li><a href="#plan">ผัง Layout</a></li>
+      <li><a href="#charging">การชาร์จ</a></li>
+      <li><a href="#facilities">สิ่งอำนวยฯ</a></li>
+      <li><a href="#phase2">Phase 2</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" title="Toggle theme">🌓</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content container">
+    <div class="hero-badge">DC Fast Charge · Phase 1</div>
+    <h1>EV Charging<br><span>Station</span><br>เชียงใหม่</h1>
+    <p class="hero-sub">สถานีชาร์จรถยนต์ไฟฟ้าระดับพรีเมียม ริมถนนสมโภชเชียงใหม่ 700 ปี</p>
+    <div class="hero-pills">
+      <div class="pill"><strong>12</strong> หัวชาร์จ Phase 1</div>
+      <div class="pill"><strong>240 kW</strong>/ตู้</div>
+      <div class="pill"><strong>5-3-57</strong> ตร.ว.</div>
+      <div class="pill"><strong>ฉ.เลขที่ 91922</strong> CM001</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-val" data-count="240">0</div>
+        <div class="stat-unit">kW / ตู้</div>
+        <div class="stat-label">DC Fast Charge</div>
+        <div class="stat-th">กำลังไฟต่อตู้</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">🔌</div>
+        <div class="stat-val" data-count="12">0</div>
+        <div class="stat-unit">หัวชาร์จ (Phase 1)</div>
+        <div class="stat-label">Charging Points</div>
+        <div class="stat-th">6 ตู้ × 2 หัว</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon amber" style="font-size:24px">🏗️</div>
+        <div class="stat-val amber" data-count="9428">0</div>
+        <div class="stat-unit">ตร.ม.</div>
+        <div class="stat-label">พื้นที่โครงการ</div>
+        <div class="stat-th">5 ไร่ 3 งาน 57 ตร.ว.</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">☕</div>
+        <div class="stat-val green" data-count="210">0</div>
+        <div class="stat-unit">ตร.ม./ชั้น</div>
+        <div class="stat-label">อาคารประกอบ</div>
+        <div class="stat-th">Cafe + Retail + WC</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">01 · ทำเลที่ตั้ง</div>
+      <h2 class="section-title">ตำแหน่งยุทธศาสตร์ ติดถนนวงแหวน</h2>
+      <p class="section-sub">ริมถนนสมโภชเชียงใหม่ 700 ปี (Ring Road 2) ใกล้ Makro หางดง, Kerry Express, HomePro — ปริมาณจราจรสูงตลอดวัน</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-img-wrap reveal">
+        <img src="aerial.jpg" alt="แผนที่ aerial ที่ดิน CM001 เชียงใหม่" loading="lazy">
+        <div class="loc-tag">
+          <strong>CM001 · ฉ.เลขที่ 91922</strong>
+          ที่ดิน 5-3-57 ตร.ว.
+        </div>
+      </div>
+      <div class="loc-img-wrap reveal">
+        <img src="map-context.png" alt="แผนที่บริบทรอบที่ดิน ถนนสมโภชเชียงใหม่ 700 ปี" loading="lazy">
+        <div class="loc-tag">
+          <strong>ถนนสมโภชเชียงใหม่ 700 ปี</strong>
+          Ring Road 2 · หางดง เชียงใหม่
+        </div>
+      </div>
+    </div>
+    <div class="loc-grid" style="margin-top:20px">
+      <div class="loc-info reveal">
+        <div class="loc-row">
+          <div class="loc-dot">📍</div>
+          <div>
+            <div class="loc-row-label">พิกัด GPS</div>
+            <div class="loc-row-val" style="font-family:var(--font-h);font-size:14px">18.7405°N, 98.9632°E</div>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-dot">🏠</div>
+          <div>
+            <div class="loc-row-label">ถนน</div>
+            <div class="loc-row-val">สมโภชเชียงใหม่ 700 ปี (วงแหวนรอบ 2)</div>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-dot">📋</div>
+          <div>
+            <div class="loc-row-label">โฉนดที่ดิน</div>
+            <div class="loc-row-val">เลขที่ 91922 · ตำบลหางดง อำเภอหางดง เชียงใหม่</div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/@18.740549500753566,98.96318393331175,17z" target="_blank" rel="noopener" class="map-link">
+          🗺 เปิดใน Google Maps
+        </a>
+      </div>
+      <div class="loc-info reveal">
+        <div class="loc-row">
+          <div class="loc-dot" style="background:var(--amber-dim);border-color:rgba(245,166,35,.3)">🏪</div>
+          <div>
+            <div class="loc-row-label">ใกล้เคียง</div>
+            <div class="loc-row-val">Makro หางดง · HomePro · MR.DIY · Kerry Express</div>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-dot" style="background:var(--amber-dim);border-color:rgba(245,166,35,.3)">🚗</div>
+          <div>
+            <div class="loc-row-label">การเข้าถึง</div>
+            <div class="loc-row-val">ทางเข้า 2 จุด (ทิศเหนือ) · Deceleration Lane</div>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-dot" style="background:rgba(34,214,90,.1);border-color:rgba(34,214,90,.2)">🌳</div>
+          <div>
+            <div class="loc-row-label">พื้นที่</div>
+            <div class="loc-row-val">85 × 115 ม. ≈ 9,428 ตร.ม. · ระยะร่น 6 ม. ทิศเหนือ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SITE PLAN -->
+<section id="plan" style="background:var(--bg2);padding-block:80px">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">02 · ผัง Layout</div>
+      <h2 class="section-title">แนวคิดการออกแบบโครงการ</h2>
+      <p class="section-sub">จัดวาง Zoning อย่างลงตัว — EV Charging Zone ติดถนนโชว์ตู้ชาร์จ, อาคารบริการฝั่งขวา, ลานจอดรถ+ขยายอนาคต</p>
+    </div>
+    <div class="plan-wrap reveal" style="margin-top:36px">
+      <img class="plan-img" src="ev_layout_pdf.jpg" alt="ผัง Layout EV Station 6 ตู้ DC Fast Charge สเกล 1:500 เชียงใหม่ 700 ปี" loading="lazy" style="max-height:700px;width:100%;object-fit:contain;object-position:top center;background:#0d1520">
+      <div class="plan-zones">
+        <div class="zone-badge" style="top:8%;left:16%">
+          ZONE B · EV CHARGING
+          <span class="zh-title">6 ตู้ × 240 kW · 12 หัวชาร์จ</span>
+        </div>
+        <div class="zone-badge amber" style="top:8%;right:4%">
+          ZONE C · อาคารประกอบ
+          <span class="zh-title">Cafe + Retail + WC · 2 ชั้น</span>
+        </div>
+        <div class="zone-badge" style="top:52%;left:14%;color:#4DA6FF;border-color:rgba(77,166,255,.3)">
+          ZONE E · ลานจอดรถ
+          <span class="zh-title">~50-80 คัน + Phase 2</span>
+        </div>
+        <div class="zone-badge green" style="bottom:5%;right:6%">
+          SCALE 1:500
+          <span class="zh-title">ที่ดิน 85 × 115 ม.</span>
+        </div>
+      </div>
+    </div>
+    <div class="zone-legend reveal">
+      <div class="zone-leg-item">
+        <div class="zone-leg-dot teal"></div>
+        <div>
+          <div class="zone-leg-name">EV ZONE</div>
+          <div class="zone-leg-sub">6 ตู้ · 12 หัวชาร์จ · Canopy</div>
+        </div>
+      </div>
+      <div class="zone-leg-item">
+        <div class="zone-leg-dot amber"></div>
+        <div>
+          <div class="zone-leg-name">อาคารประกอบ</div>
+          <div class="zone-leg-sub">Cafe + Retail 2 ชั้น</div>
+        </div>
+      </div>
+      <div class="zone-leg-item">
+        <div class="zone-leg-dot blue"></div>
+        <div>
+          <div class="zone-leg-name">ห้องน้ำ</div>
+          <div class="zone-leg-sub">Restrooms ~40 ตร.ม.</div>
+        </div>
+      </div>
+      <div class="zone-leg-item">
+        <div class="zone-leg-dot green"></div>
+        <div>
+          <div class="zone-leg-name">Green Zone</div>
+          <div class="zone-leg-sub">ภูมิทัศน์ + Phase 2</div>
+        </div>
+      </div>
+      <div class="zone-leg-item">
+        <div class="zone-leg-dot purple"></div>
+        <div>
+          <div class="zone-leg-name">ถนนภายใน</div>
+          <div class="zone-leg-sub">Two-way 6 ม. วนรอบ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EV CHARGING SPECS -->
+<section id="charging">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">03 · ระบบชาร์จ</div>
+      <h2 class="section-title">DC Fast Charge 240 kW</h2>
+      <p class="section-sub">ตู้ชาร์จประสิทธิภาพสูง 2 หัวชาร์จต่อตู้ รองรับมาตรฐาน CCS2 / CHAdeMO / GB/T ครบ</p>
+    </div>
+    <div class="ev-grid">
+      <div class="charge-viz reveal">
+        <div class="charge-ring">
+          <svg viewBox="0 0 180 180">
+            <circle class="charge-ring-track" cx="90" cy="90" r="78"/>
+            <circle class="charge-ring-fill" cx="90" cy="90" r="78"/>
+          </svg>
+          <div class="charge-inner">
+            <div class="charge-kw">240<span class="charge-kw-unit"> kW</span></div>
+            <div class="charge-label">per cabinet</div>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--border2);padding-top:16px">
+          <div class="charge-row">
+            <span class="charge-row-k">ประเภทตู้</span>
+            <span class="charge-row-v teal">DC Fast Charge</span>
+          </div>
+          <div class="charge-row">
+            <span class="charge-row-k">กำลังไฟรวม Phase 1</span>
+            <span class="charge-row-v">1,440 kW</span>
+          </div>
+          <div class="charge-row">
+            <span class="charge-row-k">จำนวนตู้</span>
+            <span class="charge-row-v">6 ตู้ (Phase 1)</span>
+          </div>
+          <div class="charge-row">
+            <span class="charge-row-k">หัวชาร์จ/ตู้</span>
+            <span class="charge-row-v teal">2 หัว</span>
+          </div>
+          <div class="charge-row">
+            <span class="charge-row-k">มาตรฐาน</span>
+            <span class="charge-row-v amber">CCS2 / CHAdeMO</span>
+          </div>
+          <div class="charge-row">
+            <span class="charge-row-k">เวลาชาร์จ (~100 kWh)</span>
+            <span class="charge-row-v">~25 นาที</span>
+          </div>
+          <div class="charge-row">
+            <span class="charge-row-k">ขนาดช่องจอด</span>
+            <span class="charge-row-v">3.5 × 6.0 ม.</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ev-stalls">
+          <div class="ev-stall active"><div class="stall-num">ROW A · ตู้ 1-3</div><div class="stall-icon">🔌</div><div class="stall-name">แถวหน้า</div><div class="stall-sub">3 ตู้ × 2 หัว = 6 จุด</div><div class="stall-bar"><div class="stall-fill" style="--pct:100%"></div></div></div>
+          <div class="ev-stall active"><div class="stall-num">ROW B · ตู้ 4-6</div><div class="stall-icon">🔌</div><div class="stall-name">แถวหลัง</div><div class="stall-sub">3 ตู้ × 2 หัว = 6 จุด</div><div class="stall-bar"><div class="stall-fill" style="--pct:100%"></div></div></div>
+          <div class="ev-stall"><div class="stall-num">AISLE</div><div class="stall-icon">↔️</div><div class="stall-name">Drive Aisle</div><div class="stall-sub">7.0 ม. ระหว่างแถว</div><div class="stall-bar"><div class="stall-fill" style="--pct:70%;background:var(--fg2)"></div></div></div>
+          <div class="ev-stall"><div class="stall-num">CANOPY</div><div class="stall-icon">🏠</div><div class="stall-name">หลังคาคลุม</div><div class="stall-sub">คลุม 100% ทุกช่อง</div><div class="stall-bar"><div class="stall-fill" style="--pct:100%;background:var(--amber)"></div></div></div>
+        </div>
+        <div style="margin-top:16px;background:var(--card);border:1px solid var(--border2);border-radius:var(--r2);padding:22px">
+          <div style="font-size:13px;font-weight:700;color:var(--teal);font-family:var(--font-h);margin-bottom:14px">⚡ SMART CHARGING FEATURES</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;gap:10px;font-size:14px">
+              <span style="color:var(--teal)">✓</span>
+              <span>EVCS Management + Load Balancing</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:14px">
+              <span style="color:var(--teal)">✓</span>
+              <span>Smart Meter + SCADA Monitoring</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:14px">
+              <span style="color:var(--teal)">✓</span>
+              <span>Solar Rooftop บน Canopy ~100 kWp (option)</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:14px">
+              <span style="color:var(--teal)">✓</span>
+              <span>Battery ESS 500 kWh Peak Shaving (option)</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:14px">
+              <span style="color:var(--teal)">✓</span>
+              <span>App Payment + QR · ตลอด 24 ชั่วโมง</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities" style="background:var(--bg2);padding-block:80px">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">04 · สิ่งอำนวยความสะดวก</div>
+      <h2 class="section-title">อาคารประกอบ 2 ชั้น</h2>
+      <p class="section-sub">ออกแบบให้ลูกค้าที่รอชาร์จมีพื้นที่พักผ่อน ทำกิจกรรม และใช้บริการได้ครบ</p>
+    </div>
+    <div class="fac-grid">
+      <div class="fac-card reveal">
+        <div class="fac-icon amber">☕</div>
+        <div class="fac-name">Café / Coffee</div>
+        <div class="fac-th">ร้านกาแฟ</div>
+        <div>
+          <div class="fac-spec"><span class="fac-spec-k">พื้นที่</span><span class="fac-spec-v">~90 ตร.ม.</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ชั้น</span><span class="fac-spec-v">1F (เคาน์เตอร์) + 2F (นั่ง)</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ที่นั่ง</span><span class="fac-spec-v">~20-30 ที่</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">Terrace</span><span class="fac-spec-v">ชั้น 2 (option)</span></div>
+        </div>
+        <div style="margin-top:12px"><span class="tag amber">Espresso Bar</span></div>
+      </div>
+      <div class="fac-card reveal">
+        <div class="fac-icon teal">🛒</div>
+        <div class="fac-name">Retail / Mini Mart</div>
+        <div class="fac-th">ร้านค้า / มินิมาร์ท</div>
+        <div>
+          <div class="fac-spec"><span class="fac-spec-k">พื้นที่</span><span class="fac-spec-v">~80 ตร.ม.</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ชั้น</span><span class="fac-spec-v">1F</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">สินค้า</span><span class="fac-spec-v">ของฝาก · ของใช้ · อาหาร</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ชำระเงิน</span><span class="fac-spec-v">QR · บัตร · เงินสด</span></div>
+        </div>
+        <div style="margin-top:12px"><span class="tag teal">Convenience</span></div>
+      </div>
+      <div class="fac-card reveal">
+        <div class="fac-icon blue">🚻</div>
+        <div class="fac-name">Restrooms</div>
+        <div class="fac-th">ห้องน้ำ</div>
+        <div>
+          <div class="fac-spec"><span class="fac-spec-k">พื้นที่</span><span class="fac-spec-v">~40 ตร.ม.</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ห้องน้ำชาย</span><span class="fac-spec-v">3 ห้อง</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ห้องน้ำหญิง</span><span class="fac-spec-v">3 ห้อง</span></div>
+          <div class="fac-spec"><span class="fac-spec-k">ผู้พิการ</span><span class="fac-spec-v">1 ห้อง (Universal)</span></div>
+        </div>
+        <div style="margin-top:12px"><span class="tag" style="background:rgba(77,166,255,.1);color:#4DA6FF;border-color:rgba(77,166,255,.25)">ADA Compliant</span></div>
+      </div>
+    </div>
+    <!-- building specs -->
+    <div class="reveal" style="margin-top:20px;background:var(--card);border:1px solid var(--border2);border-radius:var(--r2);padding:24px 28px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px">
+        <div>
+          <div style="font-size:12px;color:var(--fg2);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">GFA รวม</div>
+          <div style="font-family:var(--font-h);font-size:22px;font-weight:700;color:var(--amber)">~420 ตร.ม.</div>
+          <div style="font-size:12px;color:var(--fg2)">2 ชั้น × 210 ตร.ม.</div>
+        </div>
+        <div>
+          <div style="font-size:12px;color:var(--fg2);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">จำนวนชั้น</div>
+          <div style="font-family:var(--font-h);font-size:22px;font-weight:700;color:var(--teal)">2 ชั้น</div>
+          <div style="font-size:12px;color:var(--fg2)">ชั้น 1 บริการ + ชั้น 2 นั่งพัก</div>
+        </div>
+        <div>
+          <div style="font-size:12px;color:var(--fg2);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">Footprint</div>
+          <div style="font-family:var(--font-h);font-size:22px;font-weight:700;color:var(--fg)">15 × 39 ม.</div>
+          <div style="font-size:12px;color:var(--fg2)">ฝั่งทิศตะวันออก</div>
+        </div>
+        <div>
+          <div style="font-size:12px;color:var(--fg2);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">ลานจอดรถ</div>
+          <div style="font-family:var(--font-h);font-size:22px;font-weight:700;color:var(--green)">50-80 คัน</div>
+          <div style="font-size:12px;color:var(--fg2)">รถทั่วไป + ผู้ใช้ Cafe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELECTRICAL -->
+<section id="electrical">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">05 · ระบบไฟฟ้า</div>
+      <h2 class="section-title">Power System 2,000 kVA</h2>
+      <p class="section-sub">ระบบไฟฟ้าครบวงจร ตั้งแต่แรงดันปานกลาง 22kV ถึง DC Fast Charge พร้อมรองรับ Phase 2</p>
+    </div>
+    <div class="elec-grid">
+      <div class="elec-card reveal">
+        <div class="elec-h">Power Flow Diagram</div>
+        <div class="power-flow">
+          <div class="pf-row">
+            <div class="pf-badge">22 kV</div>
+            <div style="flex:1">
+              <div class="pf-label">MEA/PEA Supply</div>
+              <div class="pf-sub">แรงดันสายส่ง 22kV</div>
+            </div>
+          </div>
+          <div style="text-align:center;color:var(--fg2);font-size:11px;padding:3px 0">↓ MV Transformer ↓</div>
+          <div class="pf-row">
+            <div class="pf-badge">400V</div>
+            <div style="flex:1">
+              <div class="pf-label">LV Distribution 2,000 kVA</div>
+              <div class="pf-sub">ห้อง Transformer + MDB</div>
+            </div>
+          </div>
+          <div style="text-align:center;color:var(--fg2);font-size:11px;padding:3px 0">↓ EVCS Controller ↓</div>
+          <div class="pf-row">
+            <div class="pf-badge">DC</div>
+            <div style="flex:1">
+              <div class="pf-label">DC Fast Charge × 6 ตู้</div>
+              <div class="pf-sub">240 kW/ตู้ · รวม 1,440 kW</div>
+            </div>
+          </div>
+          <div style="margin-top:8px">
+            <div class="pf-row">
+              <div class="pf-badge amber">Solar</div>
+              <div style="flex:1">
+                <div class="pf-label">Solar Rooftop (Option)</div>
+                <div class="pf-sub">~100-150 kWp บน Canopy</div>
+              </div>
+            </div>
+          </div>
+          <div class="pf-row">
+            <div class="pf-badge amber">ESS</div>
+            <div style="flex:1">
+              <div class="pf-label">Battery Storage (Option)</div>
+              <div class="pf-sub">500 kWh Peak Shaving</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elec-card reveal">
+        <div class="elec-h">Key Electrical Specs</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="background:var(--card2);border-radius:10px;padding:14px 16px">
+            <div style="font-size:12px;color:var(--fg2);margin-bottom:4px">Contract Demand (Phase 1)</div>
+            <div style="font-family:var(--font-h);font-size:24px;font-weight:700;color:var(--teal)">2,000 kVA</div>
+          </div>
+          <div style="background:var(--card2);border-radius:10px;padding:14px 16px">
+            <div style="font-size:12px;color:var(--fg2);margin-bottom:4px">Peak EV Load (6 ตู้ × 240 kW)</div>
+            <div style="font-family:var(--font-h);font-size:24px;font-weight:700;color:var(--amber)">1,440 kW</div>
+            <div style="font-size:12px;color:var(--fg2)">Demand ~50-60% = ~720-864 kW avg</div>
+          </div>
+          <div style="background:var(--card2);border-radius:10px;padding:14px 16px">
+            <div style="font-size:12px;color:var(--fg2);margin-bottom:4px">Phase 2 Expansion Ready</div>
+            <div style="font-family:var(--font-h);font-size:24px;font-weight:700;color:var(--green)">4,000 kVA</div>
+            <div style="font-size:12px;color:var(--fg2)">สำรองขยาย Transformer ได้</div>
+          </div>
+          <div style="background:var(--card2);border-radius:10px;padding:14px 16px">
+            <div style="font-size:12px;color:var(--fg2);margin-bottom:4px">Pre-installed Infrastructure</div>
+            <div style="font-size:14px;font-weight:600;color:var(--fg)">Cable Tray + ท่อร้อยสายใต้ดิน</div>
+            <div style="font-size:12px;color:var(--fg2)">รองรับ Phase 2 ตั้งแต่ Phase 1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASE 2 -->
+<section id="phase2" style="background:var(--bg2);padding-block:80px">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">06 · แผนขยาย</div>
+      <h2 class="section-title">Phased Development Plan</h2>
+      <p class="section-sub">พื้นที่กว่า 3-4 ไร่ที่เหลือเตรียมรองรับการขยายฟีเฟสที่ 2 และโปรเจกต์เสริมในอนาคต</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot-wrap">
+          <div class="tl-dot active">1</div>
+        </div>
+        <div class="tl-body reveal">
+          <div class="tl-phase">Phase 1 · ปัจจุบัน</div>
+          <div class="tl-title">Core EV Station + อาคารประกอบ</div>
+          <ul class="tl-list">
+            <li>DC Fast Charge 6 ตู้ × 240 kW = 12 หัวชาร์จ</li>
+            <li>อาคาร Cafe + Retail + WC 2 ชั้น (~420 ตร.ม.)</li>
+            <li>ลานจอดรถทั่วไป ~50-80 คัน</li>
+            <li>ระบบไฟฟ้า MV/LV 2,000 kVA + EVCS SCADA</li>
+            <li>Pre-install Infrastructure สำหรับ Phase 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap">
+          <div class="tl-dot coming">2</div>
+        </div>
+        <div class="tl-body reveal">
+          <div class="tl-phase amber">Phase 2 · อนาคต</div>
+          <div class="tl-title">Expansion — เพิ่ม EV Chargers</div>
+          <ul class="tl-list">
+            <li>เพิ่ม EV Charger อีก 10-20 ช่อง (พื้นที่ฝั่งทิศตะวันออก)</li>
+            <li>ขยาย MV Transformer เป็น 4,000 kVA</li>
+            <li>Solar Rooftop 300-500 kWp</li>
+            <li>Battery ESS + V2G Integration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot-wrap">
+          <div class="tl-dot coming">3</div>
+        </div>
+        <div class="tl-body reveal">
+          <div class="tl-phase amber">Phase 3 · Optional</div>
+          <div class="tl-title">Premium Facilities & Smart Hub</div>
+          <ul class="tl-list">
+            <li>เพิ่มชั้น 3 อาคารประกอบ / Co-working Space</li>
+            <li>EV Fleet Service + Car Wash</li>
+            <li>Smart IoT Hub — Real-time Dashboard</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="cta-badge">PROJECT CODE: CM001</div>
+    <h2>พร้อมเริ่มโครงการแล้ว</h2>
+    <p>ที่ดิน ฉ.เลขที่ 91922 เนื้อที่ 5-3-57 ตร.ว. ริมถนนสมโภชเชียงใหม่ 700 ปี รอการพัฒนา</p>
+    <div class="cta-btns">
+      <a href="https://www.google.com/maps/@18.740549500753566,98.96318393331175,17z" target="_blank" rel="noopener" class="btn-primary">
+        📍 ดูแผนที่
+      </a>
+      <a href="#plan" class="btn-secondary">
+        📐 ดู Layout
+      </a>
+    </div>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-label">โครงการ</div>
+        <div class="contact-val">CM001</div>
+        <div class="contact-sub">EV Station เชียงใหม่</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">ที่ดิน</div>
+        <div class="contact-val">5-3-57 ตร.ว.</div>
+        <div class="contact-sub">ฉ.เลขที่ 91922</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Phase 1</div>
+        <div class="contact-val">12 หัวชาร์จ</div>
+        <div class="contact-sub">DC 240 kW × 6 ตู้</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">พิกัด</div>
+        <div class="contact-val" style="font-size:13px">18.7405°N</div>
+        <div class="contact-sub">98.9632°E · Chiang Mai</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">⚡ EV Station เชียงใหม่ 700 ปี</div>
+  <div class="footer-sub">ออกแบบโดย ลุงพี AI · 24 ตุลาคม 2569 · CM001 · ฉ.เลขที่ 91922</div>
+  <div class="footer-tags">
+    <div class="footer-tag">DC Fast Charge</div>
+    <div class="footer-tag">240 kW</div>
+    <div class="footer-tag">Ring Road 2</div>
+    <div class="footer-tag">Chiang Mai</div>
+    <div class="footer-tag">5 ไร่ 3 งาน</div>
+    <div class="footer-tag">EV Infrastructure</div>
+  </div>
+</footer>
+
+<script>
+// ── theme toggle ──
+const root = document.documentElement;
+const btn = document.getElementById('themeBtn');
+const saved = (() => { try { return localStorage.getItem('ev-theme') } catch { return null } })();
+if (saved) root.setAttribute('data-theme', saved);
+btn.addEventListener('click', () => {
+  const cur = root.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  try { localStorage.setItem('ev-theme', next) } catch {}
+});
+
+// ── nav active link ──
+const sections = document.querySelectorAll('section[id], div[id="location"]');
+const navLinks = document.querySelectorAll('#navLinks a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+document.querySelectorAll('section[id]').forEach(s => obs.observe(s));
+
+// ── reveal on scroll ──
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// ── counter animation ──
+function animateCount(el) {
+  const target = parseInt(el.dataset.count, 10);
+  const dur = target > 1000 ? 1800 : 1000;
+  const start = performance.now();
+  function step(now) {
+    const p = Math.min((now - start) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(ease * target).toLocaleString();
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const countObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCount(e.target);
+      countObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+// ── stall active cycling ──
+const stalls = document.querySelectorAll('.ev-stall');
+let si = 0;
+setInterval(() => {
+  stalls.forEach((s,i) => s.classList.toggle('active', i === si || i === si + 1));
+  si = (si + 2) % stalls.length;
+}, 2200);
+
+// ── PWA install prompt ──
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  // Show install hint if no banner yet
+  const cta = document.querySelector('.cta-btns');
+  if (cta && !document.getElementById('installBtn')) {
+    const ib = document.createElement('button');
+    ib.id = 'installBtn';
+    ib.className = 'btn-secondary';
+    ib.style.border = '1px solid var(--teal)';
+    ib.innerHTML = '📱 เพิ่มลงมือถือ';
+    ib.addEventListener('click', () => { deferredPrompt.prompt(); deferredPrompt = null; ib.remove(); });
+    cta.appendChild(ib);
+  }
+});
+</script>
